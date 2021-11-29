@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 38, 49);
+}
+
+.todo-box {
+    background: #fff;
+    height: 70%;
+    width: 25%;
+}
+
+.todo-header {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.todo-header p {
+    font-size: 2rem;
+}
+
+.input  {
+    height: 10%;
+    /* background: rgb(129, 30, 30); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input input {
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-top: 2px solid rgb(0, 38, 49);
+    border-bottom:2px solid rgb(0, 38, 49);
+    outline: none;
+    padding-left: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+}
+
+.input button {
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: none;
+    background-color: rgb(0, 38, 49);
+    color: #fff;
+    font-weight: 1000;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+    transition: .4s ease-out;
+}
+
+.input button:hover {
+    background-color: rgb(0, 28, 36);
+}
+
+.todo-list {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    overflow: scroll;
+}
+
+
+
+.todo-list #list li {
+    list-style: none;
+    background-color: rgb(0, 38, 49);
+    color: #fff;
+    width: 20vw;
+    margin: 10px 0;
+    padding: 20px 0;
+    padding-left: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .4s ease-out;
+}
+
+.todo-list #list li:hover {
+    background-color: rgb(0, 28, 36);
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 1000px) {
+    .todo-box {
+        width: 80%;
+    }
+
+    .todo-list #list li {
+        width: 70vw;
+        font-size: 15px;
+    }
+
+    .todo-header p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .todo-box {
+        width: 80%;
+    }
+
+    .todo-list #list li {
+        width: 70vw;
+        font-size: 15px;
+    }
+
+    .todo-header p {
+        font-size: 1rem;
+    }
+}
+
+
+
